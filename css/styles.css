@@ -39,6 +39,7 @@ html {
     --bg-button: #F5F4FA;
     --hidden-bg: #188CE8;
     --herader-border: #ECECEC;
+    --border-bottom: #EEEEEE;
 }
 
 
@@ -91,6 +92,9 @@ h5 {
 
 .site-header {
     background: var(--white-color);
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: var(--herader-border);
 }
 
 /* logo styles */
@@ -378,7 +382,7 @@ ul>.mail {
     padding: 0;
 }
 
-.footer-ul .footer-li {
+.footer-ul {
     margin-top: 20px;
 }
 
@@ -427,6 +431,20 @@ ul>.mail {
     cursor: pointer;
 }
 
+.bottom-list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+    padding-left: 0;
+    border: transparent;
+}
+
+.button.filters-btn {
+    padding: 6px 22px;
+    border-width: 0px;
+}
+
 .button:hover,
 .button:focus {
     color: var(--white-color);
@@ -442,6 +460,7 @@ ul>.mail {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--primary-text-color);
+    margin-top: 20px;
 }
 
 .scase-text {
@@ -449,4 +468,33 @@ ul>.mail {
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--text-color);
+    margin-top: 4px;
+}
+
+.list.scase {
+    padding: 0;
+}
+
+
+
+.li-scase {
+    margin-right: 30px;
+}
+
+.li-scase:nth-child(3n) {
+    margin-right: 0;
+}
+
+
+.sc-pad {
+    padding: 20px 24px;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: var(--border-bottom);
+}
+
+.list.scase {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
