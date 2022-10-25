@@ -78,14 +78,15 @@ h5 {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* head styles */
 .div-nav {
     display: flex;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+
 }
 
 .site-header {
@@ -208,8 +209,7 @@ ul>.mail {
 .hero-container {
     text-align: center;
     text-transform: uppercase;
-    margin-left: auto;
-    margin-right: auto;
+
 
 }
 
@@ -221,6 +221,7 @@ ul>.mail {
     letter-spacing: 0.06em;
     color: var(--white-color);
     text-transform: uppercase;
+    text-align: center;
 }
 
 .hero-button {
@@ -234,6 +235,11 @@ ul>.mail {
     background: var(--accent-color);
     letter-spacing: 0.06em;
     margin-top: 30px;
+}
+
+.hb {
+        align-items: center;
+        text-align: center;
 }
 
 .hero-button:hover,
@@ -257,11 +263,9 @@ ul>.mail {
     overflow: hidden;
 }
 
-.div-prior {
-    margin-left: auto;
-    margin-right: auto;
 
-}
+
+
 
 .preority-ul {
     display: flex;
@@ -294,10 +298,7 @@ ul>.mail {
 
 /* work styles */
 
-.work-div {
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 .work-title {
     margin-bottom: 50px;
@@ -335,10 +336,7 @@ ul>.mail {
     padding: 0;
 }
 
-.team-div {
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 .team-title {
     font-weight: 500;
@@ -359,12 +357,9 @@ ul>.mail {
 
 /* footer styles */
 
-.footer-div {
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.footer-div > a {
+
+.footer-div>a {
     margin: 0;
 }
 
