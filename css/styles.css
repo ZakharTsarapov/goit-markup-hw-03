@@ -374,6 +374,7 @@ ul>.mail {
 
 .team-li {
     background-color: var(--border-bottom);
+    background: var(--white-color);
 }
 
 .team {
@@ -508,11 +509,16 @@ ul>.mail {
 
 .li-scase {
     margin-right: 30px;
+    margin-bottom: 30px;
 
 }
 
 .li-scase:nth-child(3n) {
     margin-right: 0;
+}
+
+.li-scase:nth-child(n+7) {
+    margin-bottom: 0px;
 }
 
 
