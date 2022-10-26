@@ -372,8 +372,13 @@ ul>.mail {
     color: var(--text-color);
 }
 
+.team-li {
+    background-color: var(--border-bottom);
+}
+
 .team {
-    padding: 30px 70px;
+    padding: 30px 0;
+    text-align: center;
 }
 
 /* footer styles */
@@ -493,10 +498,6 @@ ul>.mail {
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--text-color);
-    border-style: solid;
-    border-width: 0 0 1px 0;
-    border-color: var(--border-bottom);
-
 }
 
 .list.scase {
@@ -517,6 +518,9 @@ ul>.mail {
 
 .sc-pad {
     padding: 20px 24px;
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+    border-color: var(--border-bottom);
 
 }
 
