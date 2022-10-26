@@ -25,6 +25,10 @@ html {
 }
 */
 
+img {
+    display: block;
+    max-width: 100%;
+}
 
 :root {
     --primary-text-color: #212121;
@@ -99,7 +103,7 @@ h5 {
 
 /* logo styles */
 .site-logo {
-    display: flex;
+    display: inline-block;
     align-items: center;
     font-family: 'Raleway';
     font-style: normal;
@@ -148,6 +152,7 @@ h5 {
 
 .head-text {
     color: var(--primary-text-color);
+
 }
 
 .menu-nav .head-text.current {
@@ -169,6 +174,8 @@ h5 {
     letter-spacing: 0.02em;
     color: var(--text-color);
     margin-left: auto;
+    padding: 0;
+
 }
 
 .mail {
@@ -239,11 +246,13 @@ ul>.mail {
     background: var(--accent-color);
     letter-spacing: 0.06em;
     margin-top: 30px;
+    border: 0;
+    padding: 10px 32px;
 }
 
 .hb {
-        align-items: center;
-        text-align: center;
+    align-items: center;
+    text-align: center;
 }
 
 .hero-button:hover,
@@ -302,7 +311,9 @@ ul>.mail {
 
 /* work styles */
 
-
+.work.section {
+    padding-top: 0;
+}
 
 .work-title {
     margin-bottom: 50px;
@@ -329,6 +340,10 @@ ul>.mail {
 
 /* team styles */
 
+.section.our-team {
+    background-color: var(--bg-button);
+}
+
 .team-name {
     margin-bottom: 50px;
 }
@@ -341,13 +356,12 @@ ul>.mail {
 }
 
 
-
 .team-title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 
@@ -356,7 +370,10 @@ ul>.mail {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--text-color);
-    margin-top: 10px;
+}
+
+.team {
+    padding: 30px 70px;
 }
 
 /* footer styles */
@@ -378,19 +395,26 @@ ul>.mail {
     padding: 0;
 }
 
+.footer-div .site-logo {
+    margin-bottom: 20px;
+}
+
 .footer-ul {
     padding: 0;
 }
 
-.footer-ul 
- {
-    margin-top: 20px;
+
+.footer-li:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 /* address styles */
+
+
+
 .footer-address {
     color: var(--white-color);
-    margin-bottom: 20px;
+
 }
 
 .footer-nav {
@@ -404,7 +428,7 @@ ul>.mail {
 .footer-mail,
 .footer-tel {
     color: var(--contact-color);
-    margin-top: 9px;
+
 }
 
 .footer-mail:hover,
@@ -461,7 +485,7 @@ ul>.mail {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--primary-text-color);
-    margin-top: 20px;
+    margin-bottom: 4px;
 }
 
 .scase-text {
@@ -469,7 +493,10 @@ ul>.mail {
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--text-color);
-    margin-top: 4px;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: var(--border-bottom);
+
 }
 
 .list.scase {
@@ -480,6 +507,7 @@ ul>.mail {
 
 .li-scase {
     margin-right: 30px;
+
 }
 
 .li-scase:nth-child(3n) {
@@ -489,9 +517,7 @@ ul>.mail {
 
 .sc-pad {
     padding: 20px 24px;
-    border-style: solid;
-    border-width: 0 0 1px 0;
-    border-color: var(--border-bottom);
+
 }
 
 .list.scase {
